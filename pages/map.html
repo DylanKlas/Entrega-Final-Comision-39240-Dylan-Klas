@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Acciones Solidarias Comunitarias</title>
+    <meta
+      name="description"
+      content="MAPA para voluntarios que buscan organizaciones sin fines de lucro"
+    />
+    <meta
+      name="keywords"
+      content="MAPA, ONGS, VOLUNTARIOS, FUNDACIONES, HTML"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/favicon-32x32.png"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/css/css bootstrap/bootstrap.css" />
+    <!--and this is from global directory
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    until here-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="row">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid d-flex">
+            <div
+              class="navbar-header justify-content-start col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3"
+            >
+              <div class="navbar-brand logo" href="#">
+                <img src="../assets/icons/logo.png" alt="Imagen del Logo" />
+              </div>
+            </div>
+            <p class="col-6 align-self-center justify-content-center">
+              <b>
+                Las pequeñas acciones marcan la diferencia. No hay mejor momento
+                para empezar que ahora.</b
+              >
+            </p>
+            <div
+              class="nav d-flex col-sm-12 col-md-6 col-lg-3 col-xl-3 col-xxl-3 flex-nowrap flex-row justify-content-end"
+            >
+              <ul class="nav d-flex flex-nowrap flex-row">
+                <li class="nav-item flex-nowrap active">
+                  <a class="nav-link" href="../index.html"
+                    ><img
+                      class="pl-1 pr-1"
+                      src="../assets/icons/home_icon_W_229px_H_214px.png"
+                      alt="Imagen de icono de Home"
+                  /></a>
+                </li>
+                <li class="nav-item flex-nowrap active mapa">
+                  <a class="nav-link" href="#"
+                    ><img
+                      class="pl-1 pr-1"
+                      src="../assets/icons/dardo_icon_W_207px_H_207px.png"
+                      alt="Imagen de icono de Mapa"
+                  /></a>
+                </li>
+                <li class="nav-item flex-nowrap active">
+                  <a class="nav-link" href="./catalog.html"
+                    ><img
+                      class="pl-1 pr-1"
+                      src="../assets/icons/catalog_icon_W_207px_H_207px.png"
+                      alt="Imagen de icono de Catalogo"
+                  /></a>
+                </li>
+                <li class="nav-item flex-nowrap active">
+                  <a class="nav-link" href="./login.html"
+                    ><img
+                      class="pl-1 pr-1"
+                      src="../assets/icons/login_icon_W_207px_H_207px.png"
+                      alt="Imagen de icono de Log In"
+                  /></a>
+                </li>
+                <li class="nav-item flex-nowrap active">
+                  <a class="nav-link" href="./aboutus.html"
+                    ><img
+                      class="pl-1 pr-1"
+                      src="../assets/icons/aboutus_icon_W_207px_H_207px.png"
+                      alt="Imagen de icono de Información"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="row">
+        <div
+          class="text-center col-12 px-5 justify-content-center bg-gris-mas-claro"
+        >
+          <p>
+            El momento es ahora! <br />
+            Buscá tu ong en el mapa. Voluntarios utilizan este mapa para
+            observar con facilidad las fundaciones cerca de ellos. Podes buscar
+            por ubicación y por nombre de la Fundación.
+            <br />
+
+            <i
+              >Podes filtrar tus gustos seleccionando o deseleccionando los
+              dardos de colores!</i
+            >
+          </p>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="d-flex flex-row flex-wrap col-12">
+          <div
+            class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 col-xxl-9 bg-light-subtle overflow-hidden"
+          >
+            <div class="position-relative">
+              <iframe
+                id="map-background-map"
+                title="background-map"
+                class="map__mapa-tamano m-5"
+                width="100%"
+                height="100%"
+                allow="fullscreen"
+                style="border: 3"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik"
+                alt="Imagen de un Mapa"
+              >
+              </iframe>
+
+              <div class="position-absolute top-50 start-50">
+                <a href="ong.html">
+                  <img
+                    id="map__img--dardo-verde"
+                    src="../assets/icons/dardo_icon_green_W_65px_H_207px.png"
+                    alt="Dardo Verde"
+                    width="20%"
+                    class="mb-4"
+                  />
+                </a>
+              </div>
+
+              <div class="position-absolute map__search-location-map">
+                <form action="#" method="get" enctype="text/plain">
+                  <div class="d-flex align-items-center">
+                    <button
+                      type="submit"
+                      form=""
+                      class="bg-light rounded-3 border-info border-5"
+                      value="Submit"
+                    >
+                      <img
+                        src="../assets/icons/search_icon2_cyan_W_222px_H_220px.png"
+                        alt="Imagen de una carta"
+                        width="100%"
+                        class="justify-content-center p-1"
+                      />
+                    </button>
+
+                    <input
+                      type="text"
+                      id="map-search__button--buscador"
+                      name="map-search__button--buscador"
+                      placeholder="Search"
+                      class="rounded-3 overflow-hidden col-11 h-auto pt-1 pb-1"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div
+            class="d-flex col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 col-xxl-3 overflow-hidden"
+          >
+            <div
+              class="container d-flex flex-column align-self-center align-items-center rounded-5 w-auto m-3 login-main-comentarios m-5"
+            >
+              <form action="#" method="get" enctype="text/plain">
+                <input
+                  type="checkbox"
+                  id="map__checkbox--ninos"
+                  name="map__checkbox--ninos"
+                  value="map__checkbox--ninos"
+                />
+                <img
+                  id="map__img--dardo-violeta"
+                  src="../assets/icons/dardo_icon_violet_W_65px_H_207px.png"
+                  alt="Dardo Violeta"
+                  width="7%"
+                  class="mb-4"
+                />
+
+                <label for="map__checkbox--ninos"> Niños </label>
+                <br />
+                <input
+                  type="checkbox"
+                  id="map__checkbox--medioambiente"
+                  name="map__checkbox--medioambiente"
+                  value="map__checkbox--medioambiente"
+                />
+                <img
+                  id="map__img--dardo-naranja"
+                  src="../assets/icons/dardo_icon_orange_W_65px_H_207px.png"
+                  alt="Dardo Naranja"
+                  width="7%"
+                  class="mb-4"
+                />
+                <label for="map__checkbox--medioambiente">
+                  Medio Ambiente
+                </label>
+                <br />
+                <input
+                  type="checkbox"
+                  id="map__checkbox--educacion"
+                  name="map__checkbox--educacion"
+                  value="map__checkbox--educacion"
+                />
+                <img
+                  id="map__img--dardo-azul"
+                  src="../assets/icons/dardo_icon_blue_W_65px_H_207px.png"
+                  alt="Dardo Azul"
+                  width="7%"
+                  class="mb-4"
+                />
+                <label for="div_dard_checkbox_educacion"> Educación </label>
+                <br />
+                <input
+                  type="checkbox"
+                  id="map__checkbox--alimentos"
+                  name="map__checkbox--alimentos"
+                  value="map__checkbox--alimentos"
+                />
+                <img
+                  id="map__img--dardo-verde"
+                  src="../assets/icons/dardo_icon_green_W_65px_H_207px.png"
+                  alt="Dardo Verde"
+                  width="7%"
+                  class="mb-4"
+                />
+                <label for="map__checkbox--alimentos"> Alimentos </label>
+                <br />
+                <input
+                  type="checkbox"
+                  id="map__checkbox--concienciasocial"
+                  name="map__checkbox--concienciasocial"
+                  value="map__checkbox--concienciasocial"
+                />
+                <img
+                  id="map__img--dardo-mostaza"
+                  src="../assets/icons/dardo_icon_mostaza_W_65px_H_207px.png"
+                  alt="Dardo Mostaza"
+                  width="7%"
+                  class="mb-4"
+                />
+                <label for="map__checkbox--concienciasocial">
+                  Conciencia Social
+                </label>
+                <br />
+                <input
+                  type="checkbox"
+                  id="map__checkbox--salud"
+                  name="map__checkbox--salud"
+                  value="map__checkbox--salud"
+                />
+                <img
+                  id="map__img--dardo-rojo"
+                  src="../assets/icons/dardo_icon_red_W_65px_H_207px.png"
+                  alt="Dardo Rojo"
+                  width="7%"
+                  class="mb-4"
+                />
+                <label for="map__checkbox--salud"> Salud </label>
+              </form>
+
+              <article
+                class="index__p--pantalla-chica index__p--pantalla-no-chica"
+              >
+                <p class="text-white opacity-25 text-center">______________</p>
+                <p class="dato-curioso">
+                  <b class="opacity-75">Sabias que...</b>
+                  <br />
+                  <br />"Esta cientificamente comprobado que ayudar al otro deja
+                  una sensación de satisfacción, eleva el autoestima y genera
+                  dopamina que aumenta la energía diaria". <br />
+                  <br />
+                  <br />
+                  www.cienciapura.com.ar
+                </p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="row d-flex flex-row card-footer">
+        <div class="d-flex justify-content-center">
+          <div class="d-flex .col-12 align-items-center">
+            <img
+              class="card-img"
+              src="../assets/icons/letter_icon_W_285px_H_205px.png"
+              alt="Imagen de una carta"
+            />
+            <div class="">
+              <p class="card-text justify-content-center">
+                ayuda@acs-helping.com.ar
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!--This is the section for javascript files of bootstrap in local directory-->
+    <script src="../assets/js/js bootstrap/bootstrap.bundle.js"></script>
+    <script src="../assets/js/js bootstrap/bootstrap.js"></script>
+
+    <!--This is from global directory
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"
+  ></script>
+  until here-->
+  </body>
+</html>

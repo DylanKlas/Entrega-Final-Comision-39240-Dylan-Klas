@@ -1,0 +1,345 @@
+@import "_variables-iniciales.scss";
+
+@mixin centrar-contenido-x {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 54.3744%; /*El font size por defecto me da
+    18,391px. Entonces para que 1rem = 10px hago regla de 3 
+    simple y me da 54.3744%. */
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  min-height: 100% !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.bg-gris-claro {
+  background-color: #bababa;
+}
+
+.bg-gris-mas-claro {
+  background-color: #e6e2e2;
+}
+
+header {
+  top: 0;
+  background-color: #e2531c;
+  overflow: hidden;
+
+  a:hover {
+    background-color: #cb4a19;
+  }
+}
+
+main img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  align-self: center;
+  justify-content: center;
+}
+
+.login-main-comentarios {
+  background-color: #e2531c;
+  margin-top: 2rem auto !important;
+}
+
+.ong-close-icon {
+  position: relative;
+  right: 0;
+  top: 0;
+  width: auto;
+  height: auto;
+}
+
+/*.ong-dard-icon {
+    
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    height: 20px !important;
+    opacity: 50%;
+  }*/
+.index__img--primera-imagen {
+  display: block;
+  margin: 0 auto;
+}
+
+.index__first-div-position {
+  position: absolute;
+  top: calc(50% - (map-get($index-altura-textos, primer-texto) / 2));
+  @include centrar-contenido-x();
+}
+.map__search-location-map {
+  top: 20px;
+  @include centrar-contenido-x();
+  width: 75%;
+}
+
+footer {
+  bottom: 0;
+  overflow-x: scroll;
+
+  div {
+    background-color: #aaaaaa;
+  }
+
+  p {
+    white-space: normal !important;
+    display: block;
+  }
+}
+
+/* Mobile Screen */
+@media screen and (max-width: 767px) {
+  h2,
+  h3 {
+    font-size: 2.4rem;
+  }
+  p {
+    font-size: 2rem;
+  }
+  label,
+  .dato-curioso,
+  select {
+    font-size: small;
+  }
+
+  .btn {
+    font-size: 2rem;
+  }
+
+  .index__p--pantalla-chica {
+    display: none !important;
+  }
+
+  .index__opacidad-segunda-imagen {
+    opacity: 60%;
+  }
+
+  header {
+    img {
+      width: 100%;
+    }
+    p {
+      display: none;
+    }
+  }
+  .logo {
+    display: none;
+  }
+
+  .index__second-div-position {
+    position: absolute;
+    top: calc(50% - (map-get($index-altura-textos, segundo-texto) / 2));
+    @include centrar-contenido-x();
+  }
+
+  .index__parent-second-div-position {
+    position: relative;
+  }
+
+  .map__mapa-tamano {
+    height: 70vh;
+    width: 90%;
+  }
+
+  form,
+  input[type="submit"] {
+    margin: 1rem auto;
+    font-size: 2rem;
+  }
+  .ong-dard-icon {
+    height: 35px !important;
+  }
+  .ong-close-icon {
+    height: 20px !important;
+  }
+  footer img {
+    width: auto;
+    height: auto;
+    max-width: 2rem;
+    max-height: 2rem;
+    margin: 0 1rem;
+  }
+}
+
+/* Tablet Screen */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  h2,
+  h3 {
+    font-size: 3rem;
+  }
+  p {
+    font-size: 2.4rem;
+  }
+  label,
+  .dato-curioso,
+  select {
+    font-size: small;
+  }
+
+  .btn {
+    font-size: 2.4rem;
+  }
+
+  .index__p--pantalla-no-chica {
+    display: inline-block;
+  }
+
+  header {
+    img {
+      width: calc(100% / 2);
+    }
+    p {
+      display: none;
+    }
+  }
+  .logo {
+    width: 60%;
+  }
+
+  .index__opacidad-segunda-imagen {
+    opacity: 100%;
+  }
+
+  .index__parent-second-div-position {
+    position: static;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .index__second-div-position {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .map__mapa-tamano {
+    height: 90vh;
+    width: 90%;
+    margin: auto;
+  }
+
+  div .navbar-brandP {
+    display: flex;
+  }
+  form,
+  input[type="submit"] {
+    margin: 2rem auto;
+    font-size: 2.4rem;
+  }
+  .ong-dard-icon {
+    height: 50px !important;
+  }
+  .ong-close-icon {
+    height: 25px !important;
+  }
+
+  footer img {
+    width: auto;
+    height: auto;
+    max-width: 2.4rem;
+    max-height: 2.4rem;
+    margin: 0 1rem;
+  }
+}
+
+/* Desktop Screen */
+@media screen and (min-width: 1024px) {
+  h2,
+  h3 {
+    font-size: 3.6rem;
+  }
+  p {
+    font-size: 3rem;
+  }
+  label,
+  .dato-curioso,
+  select {
+    font-size: small;
+  }
+  .btn {
+    font-size: 3rem;
+  }
+  .index__p--pantalla-no-chica {
+    display: inline-block;
+  }
+
+  .map__mapa-tamano {
+    height: 90vh;
+    width: 90%;
+    margin: auto;
+  }
+
+  .aboutus__div--alto {
+    height: calc(100vh / 3);
+  }
+
+  header {
+    img {
+      width: calc(100% / 2);
+    }
+    p {
+      display: flex;
+      font-size: 1.4rem;
+    }
+  }
+  .logo {
+    width: 70%;
+  }
+  .index__opacidad-segunda-imagen {
+    opacity: 100%;
+  }
+  .index__parent-second-div-position {
+    position: static;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .index__second-div-position {
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div .navbar-brandP {
+    display: flex;
+  }
+  form,
+  input[type="submit"] {
+    margin: 2rem auto;
+    font-size: 3rem;
+  }
+  .ong-dard-icon {
+    height: 55px !important;
+  }
+  .ong-close-icon {
+    height: 30px !important;
+  }
+  footer img {
+    width: auto;
+    height: auto;
+    max-width: 3rem;
+    max-height: 3rem;
+    margin: 0 1rem;
+  }
+}

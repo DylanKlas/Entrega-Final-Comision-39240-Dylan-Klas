@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Login para voluntarios que buscan organizaciones sin fines de lucro. Inicio de sesion. Cuenta."
+    />
+    <meta
+      name="keywords"
+      content="LOGIN, ONGS, VOLUNTARIOS, FUNDACIONES, HTML, COMENTARIOS, INICIO SESION, CUENTA"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Acciones Solidarias Comunitarias</title>
+    <!--This is the section for css files of bootstrap in local directory-->
+    <link
+      rel="shortcut icon"
+      href="../assets/icons/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../assets/css/normalize.css" />
+    <link rel="stylesheet" href="../assets/css/css bootstrap/bootstrap.css" />
+    <!--and this is from global directory
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    until here-->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <header class="row">
+        <nav class="navbar navbar-default">
+          <div class="container-fluid d-flex">
+            <div
+              class="navbar-header justify-content-start col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6"
+            >
+              <div class="navbar-brand logo" href="#">
+                <img src="../assets/icons/logo.png" alt="Imagen del Logo" />
+              </div>
+            </div>
+            <div
+              class="nav d-flex col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 flex-nowrap flex-row justify-content-end"
+            >
+              <ul class="nav d-flex flex-nowrap flex-row">
+                <li class="nav-item flex-nowrap active">
+                  <a class="nav-link" href="../index.html"
+                    ><img
+                      class="pl-1 pr-1"
+                      src="../assets/icons/home_icon_W_229px_H_214px.png"
+                      alt="Imagen de icono de Home"
+                  /></a>
+                </li>
+                <li class="nav-item flex-nowrap active mapa">
+                  <a class="nav-link" href="./map.html"
+                    ><img
+                      class="pl-1 pr-1"
+                      src="../assets/icons/dardo_icon_W_207px_H_207px.png"
+                      alt="Imagen de icono de Mapa"
+                  /></a>
+                </li>
+                <li class="nav-item flex-nowrap active">
+                  <a class="nav-link" href="./catalog.html"
+                    ><img
+                      class="pl-1 pr-1"
+                      src="../assets/icons/catalog_icon_W_207px_H_207px.png"
+                      alt="Imagen de icono de Catalogo"
+                  /></a>
+                </li>
+                <li class="nav-item flex-nowrap active">
+                  <a class="nav-link" href="#"
+                    ><img
+                      class="pl-1 pr-1"
+                      src="../assets/icons/login_icon_W_207px_H_207px.png"
+                      alt="Imagen de icono de Log In"
+                  /></a>
+                </li>
+                <li class="nav-item flex-nowrap active">
+                  <a class="nav-link" href="./aboutus.html"
+                    ><img
+                      class="pl-1 pr-1"
+                      src="../assets/icons/aboutus_icon_W_207px_H_207px.png"
+                      alt="Imagen de icono de Información"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main>
+        <section class="row">
+          <div
+            class="text-center col-12 px-5 justify-content-center bg-gris-mas-claro"
+          >
+            <p>
+              Tu experiencia nos nutre. <br />
+              Iniciá Sesión y contanos todo!<br />
+
+              <i
+                >Voluntarios pueden iniciar sesión y explicarles a otros
+                voluntarios sus experiencias, consejos y resolver dudas.</i
+              >
+              <br />
+              O podes preguntar lo que quieras!
+            </p>
+          </div>
+        </section>
+
+        <section class="row">
+          <div
+            class="container-fluid d-flex flex-column bg-secondary col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 align-items-center bg-opacity-10 vh-100 overflow-hidden"
+          >
+            <div
+              class="container-fluid d-flex flex-column justify-content-center align-items-center flex-grow-1"
+            >
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+                href="#"
+              >
+                <img
+                  class="shadow p-1 m-4 m-2 w-50 opacity-75"
+                  src="../assets/icons/logo.png"
+                  width="70%"
+                  alt="Imagen del Logo"
+                />
+              </div>
+              <h3
+                class="d-flex flex-column justify-content-center align-items-center"
+              >
+                Log In
+              </h3>
+              <form>
+                <div
+                  class="form-group d-flex flex-column justify-content-center align-items-center"
+                >
+                  <input
+                    type="email"
+                    class="d-flex m-1"
+                    id="form_email"
+                    placeholder="Email"
+                  />
+                  <input
+                    type="password"
+                    id="form_contrasenia"
+                    class="d-flex m-1"
+                    placeholder="Contraseña"
+                  />
+                  <a class="page-link text-primary" href="#"
+                    >¿Olvidaste tu contraseña?</a
+                  >
+                  <input
+                    type="submit"
+                    class="btn btn-primary"
+                    value="Iniciar Sesión"
+                  />
+                  <p>
+                    ¿Aún no estas registrado?<a
+                      class="text-primary text-decoration-none"
+                      href="#"
+                    >
+                      Crear cuenta</a
+                    >
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div
+            class="container-fluid d-flex flex-column col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6 vh-100 overflow-y-scroll"
+          >
+            <div
+              class="container d-flex flex-column align-self-center align-items-center rounded-5 w-80 login-main-comentarios my-5"
+            >
+              <p
+                class="justify-content-center align-items-center m-5 opacity-90"
+              >
+                <b>Comentarios:</b>
+              </p>
+
+              <div class="justify-content-start">
+                <p class="bg-white bg-opacity-25 rounded-4 p-5 mx-5">
+                  Juan: <br />
+                  Lo que viví no me lo voy a olvidar nunca. Desde que llegué me
+                  recibieron como en mi hogar, me enseñaron lo que necesitaba
+                  aprender y al poco tiempo pude enseñar lo mismo a otros
+                  compañeros que llegaron despues de mi. Muy satisfecho.
+                </p>
+              </div>
+              <div class="justify-content-start">
+                <p class="bg-white bg-opacity-25 rounded-4 p-5 mx-5">
+                  Carla: <br />
+                  Tenía miedo, no sabía que esperar o como me iban a ver. Nunca
+                  habia hecho un voluntariado en mi vida y ya tenía 18 años.
+                  Ahora hace 3 años estoy ayudando en Fundacion Bartolome y
+                  estoy con un grupo de gente hermosa. Inexplicable sensación,
+                  haganlo!
+                </p>
+              </div>
+              <div class="justify-content-start">
+                <p class="bg-white bg-opacity-25 rounded-4 p-5 mx-5 mb-5">
+                  Noelia: <br />
+                  Cuando entré a Acciones Solidarias Comunitarias no podía creer
+                  que a solo 4 cuadras de mi casa estaba la ONG Dar es Dar.
+                  Siempre quise ayudar y nunca supe como. Y ahora voy 2 veces
+                  por semana y vuelvo muy feliz conmigo misma!
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="row card-footer bg-primary">
+        <div class="d-flex justify-content-center">
+          <div class="d-flex .col-12 align-items-center">
+            <img
+              class="card-img d-inline-block"
+              src="../assets/icons/letter_icon_W_285px_H_205px.png"
+              alt="Imagen de una carta"
+            />
+            <p class="card-text d-inline-block justify-content-center">
+              ayuda@acs-helping.com.ar
+            </p>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!--This is the section for javascript files of bootstrap in local directory-->
+    <script src="../assets/js/js bootstrap/bootstrap.bundle.js"></script>
+    <script src="../assets/js/js bootstrap/bootstrap.js"></script>
+
+    <!--This is from global directory
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    until here-->
+  </body>
+</html>
